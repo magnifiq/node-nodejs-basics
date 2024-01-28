@@ -13,7 +13,7 @@ const transform = async () => {
        process.stdin,
        oper,
        process.stdout,
-       err=>console.err(err)
+       err=>console.error(err)
    )
 };
 
