@@ -12,7 +12,6 @@ const workFib=(num)=>{
             status:"resolved",
             data
         }))
-
         worker.on('error', () => resolve({
             status: "error",
             data:null
@@ -24,5 +23,8 @@ const performCalculations = async () => {
     const res=await Promise.all(workersPool)
     console.log(res)
 };
+
+
+
 
 await performCalculations();
